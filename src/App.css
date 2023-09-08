@@ -1,0 +1,57 @@
+/* Fonts */
+@font-face {
+    font-family: 'Red Hat Display';
+    src: local('Red Hat Display'), url(./assets/fonts/RedHatDisplay.ttf) format('truetype');
+  }
+@font-face {
+    font-family: 'Mistrully';
+    src: local('Mistrully'), url(./assets/fonts/Mistrully.ttf) format('truetype');
+  }
+@font-face {
+    font-family: 'Arimo';
+    src: local('Arimo'), url(./assets/fonts/Arimo.ttf) format('truetype');
+  }
+
+  * {
+      font-family: Arimo;
+      margin: 0
+  }
+
+/* Colors */
+
+:root {
+
+    /* Primary color universe */
+    --primary: #FCEDED;
+    --secondary: #C2D6EF;
+
+    /* Secondary color universe */
+    --white: #FFFFFF;
+    --success: #8B8B8B;
+    --alert: #EC709A;
+    --link: #9AB9DD;
+
+
+}
+
+.title-section {
+    font-family: 'Mistrully';
+    font-size: 2em;
+    color: var(--secondary);
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 35px
+}
+
+.title-section::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--primary);
+    left: calc(50% - 25px);
+    margin-top: 10px;
+    margin-bottom: 50px
+}

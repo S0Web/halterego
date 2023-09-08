@@ -1,0 +1,11 @@
+.contact-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 310px;
+}
+
+.contact-content iframe {
+    margin-block: 50px;
+}
